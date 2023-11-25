@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,7 @@ import java.util.Set;
 @Service
 @RequiredArgsConstructor
 @Slf4j
+@Lazy
 public class ChatSessionService {
     private static final Logger loggerChatSessionService = LoggerFactory.getLogger(ChatSessionService.class);
 

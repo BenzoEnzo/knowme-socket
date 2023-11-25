@@ -3,6 +3,7 @@ package pl.benzo.enzo.know.me.socket.server.chat;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RequestMapping("/api/chat/session")
 @RequiredArgsConstructor
+@Lazy
 public class ChatController {
 
     private final ChatSessionService chatSessionService;

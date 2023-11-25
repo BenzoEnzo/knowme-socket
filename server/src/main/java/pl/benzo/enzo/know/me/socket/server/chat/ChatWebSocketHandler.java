@@ -1,5 +1,6 @@
 package pl.benzo.enzo.know.me.socket.server.chat;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
+@Lazy
 public class ChatWebSocketHandler extends TextWebSocketHandler {
 
     private final Map<String, List<WebSocketSession>> sessionGroups = new HashMap<>();
