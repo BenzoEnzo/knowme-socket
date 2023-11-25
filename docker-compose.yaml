@@ -1,6 +1,15 @@
 version: '3.8'
 
 services:
+  knowme-app:
+    image:  knowme-socket:005
+    ports:
+      - "8064:8064"
+    environment:
+        SPRING_DATA_REDIS_HOST: redis
+        SPRING_DATA_REDIS_PORT: 6379
+    depends_on:
+        - redis
   redis:
     image: redis:latest
     ports:
