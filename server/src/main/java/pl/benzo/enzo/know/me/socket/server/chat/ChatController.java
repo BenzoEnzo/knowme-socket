@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RequestMapping("/api/chat/session")
 @RequiredArgsConstructor
-@Lazy
 public class ChatController {
 
     private final ChatSessionService chatSessionService;

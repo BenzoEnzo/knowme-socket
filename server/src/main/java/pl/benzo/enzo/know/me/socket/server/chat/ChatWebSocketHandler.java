@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-@Lazy
 public class ChatWebSocketHandler extends TextWebSocketHandler {
 
     private final Map<String, List<WebSocketSession>> sessionGroups = new HashMap<>();

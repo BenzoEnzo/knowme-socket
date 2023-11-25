@@ -17,7 +17,6 @@ import java.util.Set;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-@Lazy
 public class ChatSessionService {
     private static final Logger loggerChatSessionService = LoggerFactory.getLogger(ChatSessionService.class);
 
