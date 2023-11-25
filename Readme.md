@@ -1,2 +1,2 @@
 - PORT: 8064
-- https://ec2-54-83-118-234.compute-1.amazonaws.com:8064/ <- adres sie zmienia
+- http://ec2-54-83-118-234.compute-1.amazonaws.com:8064/ 
